@@ -21,7 +21,7 @@ const LocationItem: FC<locationItemProps> = ({ location }) => {
   const { Name, PhoneNumber, Address, id, orgId, ...variables } = location;
 
   return (
-    <article className="text-slate-700 px-9 py-7 rounded-lg bg-white drop-shadow-lg text-[1.4rem] flex flex-col gap-4 tracking-wide">
+    <article className="text-slate-700 px-9 py-7 rounded-lg bg-white drop-shadow-lg flex flex-col gap-4 tracking-wide">
       <header>
         <LocationData location={location} />
       </header>

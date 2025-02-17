@@ -19,9 +19,9 @@ type NavItemProps = {
 };
 const NavItem: FC<NavItemProps> = ({ label, url, selected, unformatted }) => {
   const navItemClasses = clsx(
-    "text-2xl text-gray-700 tracking-wide whitespace-nowrap",
+    "text-lg text-gray-700 tracking-wide whitespace-nowrap",
     {
-      "text-orange-600 font-normal py-4 px-6 flex items-center justify-center bg-[#FFF0E6] rounded-md tracking-wider":
+      "text-orange-600 font-normal py-2 px-4 flex items-center justify-center bg-[#FFF0E6] rounded-md tracking-wider":
         selected,
     }
   );

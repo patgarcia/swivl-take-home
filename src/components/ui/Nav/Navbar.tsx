@@ -11,8 +11,8 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <nav className="px-12 py-4 bg-white drop-shadow-sm">
-      <ul className="flex flex-row gap-12 items-center">
+    <nav className="px-8 py-2 bg-white drop-shadow-sm">
+      <ul className="flex flex-row gap-6 items-center">
         {navItems.map((itemData) => (
           <NavItem key={itemData.label} {...itemData} />
         ))}

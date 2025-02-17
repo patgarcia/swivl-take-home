@@ -28,7 +28,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
       return (
         this.props.fallback || (
           <div className="h-svh w-svw flex flex-col justify-center items-center gap-4">
-            <h1 className="text-2x text-center w-fit">Something went wrong</h1>
+            <h1 className="text-2xl text-center w-fit">Something went wrong</h1>
             <a
               href="#"
               onClick={() => window.location.reload()}
