@@ -8,3 +8,5 @@ export const titleCase = (words: string) =>
 
 export const slugify = (words: string) =>
   words.split(" ").map(lowerCase).join("-");
+
+export const splitOnCap = (str: string) => str.split(/(?=[A-Z])/).join(' ');
