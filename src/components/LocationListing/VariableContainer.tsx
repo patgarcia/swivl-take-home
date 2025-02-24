@@ -10,14 +10,10 @@ const VariableContainer: FC<VariableContainerProps> = ({ variables }) => {
   return (
     <div className="px-6 py-4">
       {Object.entries(variables).map(([key, val]) => (
-        <>
-          <p className="text-orange-700/50">
-            <span className="font-semibold">
-              {capitalize(splitOnCap(key))}:{" "}
-            </span>
-            {val}
-          </p>
-        </>
+        <p key={`${key} ${val}`} className="text-orange-700/50">
+          <span className="font-semibold">{capitalize(splitOnCap(key))}: </span>
+          {val}
+        </p>
       ))}
     </div>
   );

@@ -28,9 +28,9 @@ const LocationItem: FC<locationItemProps> = ({ location }) => {
       <a className="underline" href="#" onClick={toggleVars}>
         Show Variables
       </a>
-      <div className={revealClasses}>
+      <footer className={revealClasses}>
         <VariableContainer variables={variables} />
-      </div>
+      </footer>
     </article>
   );
 };
